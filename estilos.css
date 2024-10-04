@@ -1,0 +1,96 @@
+body {
+    background-color: #f0f0f0; /* Color de fondo suave */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    padding: 40px; /* Mayor espacio alrededor */
+    max-width: 1200px; /* Limita el ancho máximo */
+    margin: auto; /* Centra la sección */
+    background-color: white; /* Fondo blanco para la sección */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+}
+
+.titulo {
+    text-align: center;
+    background-image: url('fondo.jpg'); 
+    color: white;
+    padding: 20px; /* Espacio en el título */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+.texto {
+    flex: 1; 
+    margin-right: 40px; /* Mayor espacio a la derecha */
+    line-height: 1.8; /* Mejora la legibilidad del texto */
+    color: #333; /* Color del texto más oscuro */
+}
+
+.texto p {
+    margin: 0 0 15px; /* Espaciado entre párrafos */
+}
+
+.imagen {
+    flex: 1; /* Permite que el carrusel ocupe el mismo espacio que el texto */
+}
+
+.carousel-inner img {
+    max-width: 100%; 
+    height: auto; 
+    border: none; /* Elimina el borde de las imágenes */
+    outline: none; /* Asegura que no haya contornos */
+    box-shadow: none; /* Elimina cualquier sombra de las imágenes */
+    display: block; /* Asegura que no haya espacio extra */
+}
+
+.carousel-control-prev, 
+.carousel-control-next {
+    background: transparent; /* Elimina el fondo */
+    border: none; /* Elimina cualquier borde */
+}
+
+.carousel-control-prev-text,
+.carousel-control-next-text {
+    display: none; /* Oculta las etiquetas de texto */
+}
+
+.carousel-control-prev-icon, 
+.carousel-control-next-icon {
+    background: transparent; /* Asegura que el fondo de las flechas sea transparente */
+    filter: invert(1); /* Cambia el color de las flechas a blanco */
+}
+
+/* Estilos adicionales para mejorar la apariencia */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Apila elementos en pantallas pequeñas */
+        align-items: center; /* Centra los elementos */
+        padding: 20px; /* Menos padding en pantallas pequeñas */
+    }
+
+    .texto {
+        margin-right: 0; /* Elimina el margen derecho en pantallas pequeñas */
+        margin-bottom: 20px; /* Añade un margen inferior */
+        text-align: center; /* Centra el texto en pantallas pequeñas */
+    }
+
+    .imagen {
+        width: 100%; /* Asegura que el carrusel ocupe el 100% en pantallas pequeñas */
+    }
+}
+
+.cartoon {
+    text-align: center;
+}
+
+.video {
+    padding-left: 35%;
+    padding-right: 35%;
+}
